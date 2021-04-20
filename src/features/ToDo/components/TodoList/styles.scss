@@ -1,0 +1,13 @@
+.todo-list
+{
+    & > li.completed
+    {
+        color: red;
+        font-size: 35px;
+        text-decoration: line-through;
+    }
+    cursor: pointer;
+
+    list-style-type: none;
+    text-align: center;
+}
