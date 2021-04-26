@@ -1,11 +1,11 @@
 import React from 'react';
-import { Redirect, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import AlbumFeatures from './features/Album';
+import CartFeature from './features/Cart';
 import ProductFeature from './features/Product';
 import TodoFeature from './features/ToDo';
-import CartFeature from './features/Cart';
 
 function App() {
   return (
@@ -13,7 +13,8 @@ function App() {
       <Header />
 
       <Switch>
-        <Redirect from="/home" to="/" exact />
+        {/* <Redirect from="/home" to="/" exact /> */}
+        <Route path="/" component={ProductFeature} />
         <Route path="/todos" component={TodoFeature} />
         <Route path="/albums" component={AlbumFeatures} />
         <Route path="/products" component={ProductFeature} />
