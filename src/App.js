@@ -14,9 +14,9 @@ function App() {
 
       <Switch>
         {/* <Redirect from="/home" to="/" exact /> */}
-        <Route path="/" component={ProductFeature} />
-        <Route path="/todos" component={TodoFeature} />
-        <Route path="/albums" component={AlbumFeatures} />
+        {/* <Route path="/" component={ProductFeature} /> */}
+        <Route path="/todos" component={TodoFeature} exact />
+        <Route path="/album" component={AlbumFeatures} />
         <Route path="/products" component={ProductFeature} />
         <Route path="/cart" component={CartFeature} />
 
