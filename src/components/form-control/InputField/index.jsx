@@ -9,8 +9,8 @@ InputField.propTypes = {
   label: PropTypes.string,
 };
 function InputField(props) {
-  const { form, name, label, errors } = props;
-  console.log(errors);
+  const { form, name, label } = props;
+  // console.log(errors);
   return (
     <Controller
       render={({ field }) => {

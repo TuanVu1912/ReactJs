@@ -1,9 +1,8 @@
-import { Update } from "@material-ui/icons";
-import axiosClient from "./axiosClient";
+import axiosClient from './axiosClient';
 
 const categoryApi = {
   getAll(params) {
-    const url = "/categories";
+    const url = '/categories';
     return axiosClient.get(url, { params });
   },
   get(id) {
@@ -11,7 +10,7 @@ const categoryApi = {
     return axiosClient.get(url);
   },
   add(data) {
-    const url = "/categories";
+    const url = '/categories';
     return axiosClient.post(url, data);
   },
   update(data) {

@@ -1,4 +1,3 @@
-import { Update } from '@material-ui/icons';
 import axiosClient from './axiosClient';
 
 const productApi = {

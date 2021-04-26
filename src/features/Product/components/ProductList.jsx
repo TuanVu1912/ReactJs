@@ -1,7 +1,7 @@
 import { Box, Grid } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import React from 'react';
-import Product from './Product.';
+import Product from './Product';
 
 ProductList.propTypes = {
   data: PropTypes.array,

@@ -1,12 +1,12 @@
 import { yupResolver } from '@hookform/resolvers/yup';
 import { Avatar, Button, Typography } from '@material-ui/core';
-import { CenterFocusStrong, LockOutlined } from '@material-ui/icons';
+import { makeStyles } from '@material-ui/core/styles';
+import { LockOutlined } from '@material-ui/icons';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import InputField from '../../../../components/form-control/InputField';
-import { makeStyles } from '@material-ui/core/styles';
 import PasswordField from '../../../../components/form-control/PasswordField';
 
 const useStyles = makeStyles((theme) => ({

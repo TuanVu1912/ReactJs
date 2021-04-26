@@ -1,4 +1,3 @@
-import { TextField } from '@material-ui/core';
 import FormControl from '@material-ui/core/FormControl';
 import IconButton from '@material-ui/core/IconButton';
 import InputAdornment from '@material-ui/core/InputAdornment';
@@ -8,7 +7,6 @@ import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
-import { Controller } from 'react-hook-form';
 
 PasswordField.propTypes = {
   form: PropTypes.object.isRequired,
@@ -16,7 +14,7 @@ PasswordField.propTypes = {
   label: PropTypes.string,
 };
 function PasswordField(props) {
-  const { form, name, label } = props;
+  const { name, label } = props; // const { form, name, label } = props;
   const [showPassword, setShowPassword] = useState('false');
   const toggleShowPassword = () => {
     setShowPassword((x) => !x);
